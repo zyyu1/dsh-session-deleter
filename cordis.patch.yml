@@ -1,0 +1,12 @@
+# This file is loaded when the package is a profile layer (declares
+# dsh.bundle.patch). It inserts the plugin into the web composition.
+- insert:
+    - id: session-deleter
+      name: dsh-session-deleter
+      inject:
+        - connection
+        - webServer
+        - agents
+        - sessionPersistence
+        - workspaceRegistry
+        - sessions
