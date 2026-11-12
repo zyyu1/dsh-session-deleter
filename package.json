@@ -2,7 +2,6 @@
   "name": "dsh-session-deleter",
   "description": "Delete DSH sessions from the sidebar: stop the live agent, move the session log to a recoverable trash, and restore it later",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -30,6 +29,23 @@
   },
   "scripts": {
     "test": "node test/host.test.mjs && node test/client.test.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "session",
+    "delete",
+    "trash"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyyu1/dsh-session-deleter.git"
+  },
+  "homepage": "https://github.com/zyyu1/dsh-session-deleter#readme",
+  "bugs": {
+    "url": "https://github.com/zyyu1/dsh-session-deleter/issues"
   },
   "license": "MIT"
 }
