@@ -18,11 +18,17 @@ DSH itself only archives sessions (hides them); this plugin adds real, undoable 
 
 ## Compatibility
 
-Built for `@deepseek-ai/dsh` **0.2.1-rc.5**. It uses the official client slots (`sidebar.workspaces.session.menu.item`, `sidebar.workspaces.session.row.action`, `shell.overlay`, `sidebar.panellist`, `main`) and the official Connection RPC channel, plus these internal shapes: `AgentHandle.dispose`, `sessionPersistence.root` / `findLog()`, `WorkspaceEntity.attachSession/detachSession`.
+Built for `@deepseek-ai/dsh` **0.2.1-rc.5**. It uses the official client slots (`sidebar.workspaces.session.menu.item`, `sidebar.workspaces.session.row.action`, `shell.overlay`, `sidebar.panellist`, `main`) and the official Connection admission fence, plus these internal shapes: `AgentHandle.dispose`, `sessionPersistence.root` / `findLog()`, `WorkspaceEntity.attachSession/detachSession`.
 
 Inspired by [jasonrale/dsh-archive-manager](https://github.com/jasonrale/dsh-archive-manager), whose 0.1.0-rc.6 client API does not load on 0.2.x.
 
 ## Install
+
+Repository: <https://github.com/zyyu1/dsh-session-deleter>
+
+```sh
+git clone https://github.com/zyyu1/dsh-session-deleter
+```
 
 Installed on this machine as:
 

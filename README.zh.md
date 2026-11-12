@@ -18,7 +18,7 @@ DSH 原生只有「归档」（把会话从侧栏隐藏），并不删除磁盘�
 
 ## 兼容性
 
-针对 `@deepseek-ai/dsh` **0.2.1-rc.5**（桌面版 0.2.1-rc.5）开发，使用官方公开的客户端 slot 与 Connection RPC：
+针对 `@deepseek-ai/dsh` **0.2.1-rc.5**（桌面版 0.2.1-rc.5）开发，使用官方公开的客户端 slot 与 Connection 认证栅栏：
 
 - 客户端 slot：`sidebar.workspaces.session.menu.item`、`sidebar.workspaces.session.row.action`、`shell.overlay`、`sidebar.panellist`、`main`
 - Host 服务：`agents`、`sessionPersistence`、`workspaceRegistry`、`sessions`、`connection`
@@ -27,6 +27,12 @@ DSH 原生只有「归档」（把会话从侧栏隐藏），并不删除磁盘�
 参考思路来自 [jasonrale/dsh-archive-manager](https://github.com/jasonrale/dsh-archive-manager)（归档面板 + 彻底删除），但接口按 0.2.x 重写：原插件针对 0.1.0-rc.6，直接安装会因客户端模块表与 slot 名变化而加载失败。
 
 ## 安装
+
+仓库：<https://github.com/zyyu1/dsh-session-deleter>
+
+```sh
+git clone https://github.com/zyyu1/dsh-session-deleter
+```
 
 本机安装位置（已装好）：
 
